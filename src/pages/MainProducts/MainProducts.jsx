@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import { getProducts } from '../../services/productService';
 import { useEffect } from 'react';
+import ProductCard from '../../components/ProductCard/ProductCard';
 
 export default function MainProducts() {
   const [products, setProducts] = useState([]);
@@ -19,9 +20,7 @@ export default function MainProducts() {
     <div>
       {
         products.map(product => (
-          <div key={product.id}>
-            <h2>{product.title} {product.price}</h2>
-          </div>
+          <ProductCard product={product} key={product.id}></ProductCard>
         ))
       }
     </div>
