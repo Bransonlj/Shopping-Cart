@@ -41,7 +41,7 @@ export default function ProductsListPage() {
   }
 
   return (
-    <div>
+    <div class='flex flex-wrap justify-center gap-4'>
       {
         products.map(product => (
           <ProductSummaryCard onClick={() => handleClick(product.id)} product={product} key={product.id}></ProductSummaryCard>

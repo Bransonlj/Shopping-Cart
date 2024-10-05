@@ -35,7 +35,9 @@ export default function ProductPage() {
     }
 
     return (
-        <ProductDetail product={product}></ProductDetail>
+        <div class='flex flex-col items-center'>
+            <ProductDetail product={product}></ProductDetail>
+        </div>
     )
 
 }

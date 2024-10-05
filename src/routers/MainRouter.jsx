@@ -3,13 +3,12 @@ import { createBrowserRouter, createRoutesFromElements, Navigate, Route, RouterP
 import ProductsListPage from '../pages/ProductsListPage/ProductsListPage'
 import ProductPage from '../pages/ProductPage/ProductPage'
 import CartPage from '../pages/CartPage/CartPage'
-import NavBar from '../components/NavBar/NavBar'
+import Layout from '../pages/Layout/Layout'
 
 export default function MainRouter() {
-
   const router = createBrowserRouter(
     createRoutesFromElements(
-      <Route path='/' element={<NavBar />}>
+      <Route path='/' element={<Layout />}>
         <Route index element={<Navigate replace to='/products' />}></Route>
         <Route path='products'>
           <Route index element={<ProductsListPage />} />
