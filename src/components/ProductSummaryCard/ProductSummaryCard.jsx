@@ -1,7 +1,7 @@
 import React from 'react'
 import CategoryBadge from '../CategoryBadge/CategoryBadge'
 
-export default function ProductCard({ product, onClick }) {
+export default function ProductSummaryCard({ product, onClick }) {
   return (
     <div onClick={onClick}>
       <img width={100} src={product.image}></img>

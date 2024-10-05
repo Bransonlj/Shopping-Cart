@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import { getProducts } from '../../services/productService';
 import { useEffect } from 'react';
-import ProductCard from '../../components/ProductCard/ProductCard';
+import ProductSummaryCard from '../../components/ProductSummaryCard/ProductSummaryCard';
 import LoadingIndicator from '../../components/LoadingIndicator/LoadingIndicator';
 import ErrorMessage from '../../components/ErrorMessage/ErrorMessage';
 import { useNavigate } from 'react-router-dom';
@@ -44,7 +44,7 @@ export default function ProductsListPage() {
     <div>
       {
         products.map(product => (
-          <ProductCard onClick={() => handleClick(product.id)} product={product} key={product.id}></ProductCard>
+          <ProductSummaryCard onClick={() => handleClick(product.id)} product={product} key={product.id}></ProductSummaryCard>
         ))
       }
     </div>
