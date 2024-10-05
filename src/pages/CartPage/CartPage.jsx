@@ -17,8 +17,8 @@ export default function CartPage() {
   const { products, totalCost, isLoading, errors } = useFetchCart(cartContents);
 
   return (
-    <div class='flex flex-col items-stretch px-16 gap-4'>
-      <h2 class='font-bold text-2xl text-indigo-700 bg-white drop-shadow-md rounded-sm p-4'>Shopping Cart</h2>
+    <div className='flex flex-col items-stretch px-16 gap-4'>
+      <h2 className='font-bold text-2xl text-indigo-700 bg-white drop-shadow-md rounded-sm p-4'>Shopping Cart</h2>
       {
         isLoading && <LoadingIndicator label="Loading cart... Please wait" />
       }
@@ -39,8 +39,8 @@ export default function CartPage() {
           <ErrorMessage key={index} message={error} />
         ))
       }
-      <div class='bg-white drop-shadow-md rounded-sm p-4 flex justify-center'>
-       <span class='font-semibold text-lg'>Total: <span class='font-bold text-2xl text-indigo-700'>{formatPrice(totalCost)}</span></span>
+      <div className='bg-white drop-shadow-md rounded-sm p-4 flex justify-center'>
+       <span className='font-semibold text-lg'>Total: <span class='font-bold text-2xl text-indigo-700'>{formatPrice(totalCost)}</span></span>
       </div>
     </div>
   )

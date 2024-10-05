@@ -15,24 +15,24 @@ export default function ProductDetail({ product }) {
     }
 
     return (
-        <div class='flex flex-col items-center max-w-4xl bg-white drop-shadow-sm rounded-sm p-8 gap-16'>
-            <div class='flex w-full justify-around gap-8 px-4'>
-                <img class='basis-1/2 size-96 p-4 ' src={product.image} alt="image not found" />
-                <div class='basis-1/2 flex flex-col items-start gap-4'>
-                    <h2 class='font-bold text-2xl' >{product.title}</h2>
+        <div className='flex flex-col items-center max-w-4xl bg-white drop-shadow-sm rounded-sm p-8 gap-16'>
+            <div className='flex w-full justify-around gap-8 px-4'>
+                <img className='basis-1/2 size-96 p-4 ' src={product.image} alt="image not found" />
+                <div className='basis-1/2 flex flex-col items-start gap-4'>
+                    <h2 className='font-bold text-2xl' >{product.title}</h2>
                     <CategoryBadge label={product.category}></CategoryBadge>
-                    <h2 class='font-bold text-2xl text-indigo-600'>${product.price}</h2>
-                    <div class='flex gap-2 items-center'>
+                    <h2 className='font-bold text-2xl text-indigo-600'>${product.price}</h2>
+                    <div className='flex gap-2 items-center'>
                         <Button onClick={handleAddToCart} image={cartLogo} label='Add to Cart' />
                         {
-                            added && <span class='font-semibold text-indigo-900'>Item successfuly added!</span>
+                            added && <span className='font-semibold text-indigo-900'>Item successfuly added!</span>
                         }
                     </div>
                 </div>
             </div>
-            <div class='mx-16'>
-                <h2 class='font-semibold text-xl'>Product Description</h2>
-                <p class='whitespace-pre-wrap text-base'>{product.description}</p>
+            <div className='mx-16'>
+                <h2 className='font-semibold text-xl'>Product Description</h2>
+                <p className='whitespace-pre-wrap text-base'>{product.description}</p>
             </div>
         </div>
     )
