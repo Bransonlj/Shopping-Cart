@@ -6,6 +6,9 @@ import LoadingIndicator from '../../components/LoadingIndicator/LoadingIndicator
 import { formatPrice } from '../../utils/stringUtils';
 import ErrorMessage from '../../components/ErrorMessage/ErrorMessage';
 
+/**
+ * Renders the shopping cart page with the contents of the cart and its details.
+ */
 export default function CartPage() {
   const { 
     cartContents,

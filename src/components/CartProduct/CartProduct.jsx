@@ -3,6 +3,16 @@ import Button from '../Button/Button';
 import { formatPrice } from '../../utils/stringUtils';
 import trashLogo from '../../assets/trash-white.svg'
 
+/**
+ * Renders a cart product item with the ability to increment, decrement, or remove the product from the cart.
+ *
+ * @param {Object} props - The props object.
+ * @param {Object} props.product - The product object.
+ * @param {number} props.count - The quantity of the product in the cart.
+ * @param {function} props.increment - Function to handle incrementing the product quantity.
+ * @param {function} props.decrement - Function to handle decrementing the product quantity.
+ * @param {function} props.remove - Function to handle removing the product from the cart.
+ */
 export default function CartProduct({ product, count, increment, decrement, remove }) {
 
   return (

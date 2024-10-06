@@ -7,6 +7,9 @@ import LoadingIndicator from '../../components/LoadingIndicator/LoadingIndicator
 import ErrorMessage from '../../components/ErrorMessage/ErrorMessage';
 import { useNavigate } from 'react-router-dom';
 
+/**
+ * Renders the page of all products as a list view.
+ */
 export default function ProductsListPage() {
   const navigate = useNavigate();
   const [products, setProducts] = useState([]);

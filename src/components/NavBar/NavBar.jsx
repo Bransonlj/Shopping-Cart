@@ -3,6 +3,9 @@ import { NavLink } from 'react-router-dom'
 import { CartContext } from '../../context/CartContext'
 import cartLogo from '../../assets/shopping-cart-white.svg'
 
+/**
+ * Navigation bar for the application providing links to the products page and carts page.
+ */
 export default function NavBar() {
 
   const { cartContents } = useContext(CartContext);

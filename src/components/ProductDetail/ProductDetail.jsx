@@ -4,6 +4,17 @@ import Button from "../Button/Button";
 import cartLogo from '../../assets/shopping-cart-white.svg'
 import CategoryBadge from "../CategoryBadge/CategoryBadge";
 
+/**
+ * Renders a detailed view of a product and allows the user to add the product to the cart.
+ *
+ * @param {Object} props - The props object.
+ * @param {Object} props.product - The product object containing detailed information.
+ * @param {string} props.product.image - The URL of the product image.
+ * @param {string} props.product.title - The name or title of the product.
+ * @param {string} props.product.category - The category of the product.
+ * @param {number} props.product.price - The price of the product.
+ * @param {string} props.product.description - The description of the product.
+ */
 export default function ProductDetail({ product }) {
 
     const { addOneToCart } = useContext(CartContext);

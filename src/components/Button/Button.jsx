@@ -1,5 +1,13 @@
 import React from 'react'
 
+/**
+ * A styled button component with an optional image and label.
+ *
+ * @param {Object} props - The props object.
+ * @param {string} props.label - The label text to display on the button.
+ * @param {function} props.onClick - The function to call when the button is clicked.
+ * @param {string} [props.image] - The optional image URL to display on the button, alongside the label.
+ */
 export default function Button({label, onClick, image}) {
   return (
     <button

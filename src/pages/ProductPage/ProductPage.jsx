@@ -5,6 +5,9 @@ import LoadingIndicator from "../../components/LoadingIndicator/LoadingIndicator
 import ErrorMessage from "../../components/ErrorMessage/ErrorMessage";
 import ProductDetail from "../../components/ProductDetail/ProductDetail";
 
+/**
+ * Renders the product details page.
+ */
 export default function ProductPage() {
     const { id } = useParams();
     const [product, setProduct] = useState({});
