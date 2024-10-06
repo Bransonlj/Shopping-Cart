@@ -1,3 +1,7 @@
+# Shopping Cart App 
+
+Shopping Cart is a frontend Reactjs application that uses the [Fake Store API](https://fakestoreapi.com/)
+
 # How to run
 
 Run it just like any other React app!
